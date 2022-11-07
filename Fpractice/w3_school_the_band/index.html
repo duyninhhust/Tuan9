@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The band</title>
+    <link rel="icon" href="data:image/jpeg;base64,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" type="image/x-icon" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/reponsive.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <!-- Begin nav -->
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#">
+                        More
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#">Merchadise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- End nav -->
+            <!-- Begin : search button -->
+            <div class="search-btn">
+                <i class=" search-icon fas fa-search"></i>
+            </div>
+
+            <div class="mobile-menu-btn">
+                <i class=" menu-icons fas fa-bars"></i>
+            </div>
+            <!-- End : search button -->
+
+
+        </div>
+        <div id="slider">
+            <div class="text-content">
+                <h2 class="text-heading">
+                    New York
+                </h2>
+                <div class="text-description">
+                    Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="band" class="content-section">
+                <h2 class="section-heading" >
+                    The Band
+                </h2>
+                <p class="section-sub-heading">
+                    We love music
+                </p>
+                <p class="about-text">
+                    We have created a fictional band website.
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.
+                </p>
+                <div class="members-list">
+                    <div class="member-item">
+                        <p class="member-name">
+                            Name
+                        </p>
+                        <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Name" class="member-img">
+                    </div>
+                    <div class="member-item">
+                        <p class="member-name">
+                            Name
+                        </p>
+                        <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Name" class="member-img">
+                    </div>
+                    <div class="member-item">
+                        <p class="member-name">
+                            Name
+                        </p>
+                        <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Name" class="member-img">
+                    </div>
+
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div id="tour" class="tour-section">
+                <div class="content-section">
+                    <h2 class="section-heading text-white">
+                        Tour dates
+                    </h2>
+                    <p class="section-sub-heading text-white">
+                        Remember to book your tickets!
+                    </p>
+
+                    <ul class="tickets-list">
+                        <li>September <span class="sold-out">
+                                Sold out
+                            </span></li>
+                        <li>Octorber<span class="sold-out">
+                                Sold out
+                            </span></li>
+                        <li>November <span class="quantity">3</span></li>
+                    </ul>
+
+                    <div class="touring-place-section">
+                        <div class="tour-place-item">
+                            <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="" class="place">
+                            <div class="text-place">
+                                <h2 class="place-name">New York</h2>
+                                <p class="place-day">
+                                    Fri 27 Nov 2016
+                                </p>
+                                <p class="place-discrip">
+                                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <button class="buy-ticket js-buy-ticket">
+                                    Buy Tickets
+                                </button>
+
+                            </div>
+
+                        </div>
+                        <div class="tour-place-item">
+                            <img src="https://www.w3schools.com/w3images/paris.jpg" alt="" class="place">
+                            <div class="text-place">
+                                <h2 class="place-name">Paris</h2>
+                                <p class="place-day">
+                                    Sat 28 Nov 2016
+                                </p>
+                                <p class="place-discrip">
+                                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <button class="buy-ticket js-buy-ticket">
+                                    Buy Tickets
+                                </button>
+
+                            </div>
+
+                        </div>
+                        <div class="tour-place-item">
+                            <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="" class="place">
+                            <div class="text-place">
+                                <h2 class="place-name">San Francisco</h2>
+                                <p class="place-day">
+                                    Sun 29 Nov 2016
+                                </p>
+                                <p class="place-discrip">
+                                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <button class="buy-ticket js-buy-ticket">
+                                    Buy Tickets
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Begin Contact -->
+            <div id="contact" class="content-section">
+                <h2 class="section-heading">
+                    CONTACT
+                </h2>
+                <p class="section-sub-heading">
+                    Fan? Drop a note!
+                </p>
+
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i>Chicago, US</p>
+                        <p><i class="fas fa-phone"></i></i>Phone: +00 151515</p>
+                        <p><i class="fas fa-envelope"></i>Email: mail@mail.com</p>
+                    </div>
+                    <div class="col col-half contact-form">
+                        <form action="">
+                            <div class="row" >
+                                <div class="col col-haft first">
+                                    <input type="text" name="" placeholder="Name" id="" required class="form-control">
+                                </div>
+                                <div class="col col-haft">
+                                    <input type="email" name="" placeholder="Email" id="" required class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" name="" placeholder="Message" id="" required class="form-control">
+                                </div>
+                            </div>
+                            <input class=" form-submit mt-16" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End Contact -->
+
+            <!--Map   -->
+            <div class="map-section">
+                <img src="https://www.w3schools.com/w3images/map.jpg" alt="">
+            </div>
+        </div>
+        <div id="footer">
+            <div class="social-list">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-pinterest-p"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+                <p class="copyright">
+                    Powered by <a href=""> w3.css</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <!-- begin model -->
+    <div class="model">
+        <div class="model-container">
+            <div class="model-close">
+                <i class="far fa-times-circle"></i>
+            </div>
+            <header class="model-header">
+                <i class="model-heading-icon fas fa-shopping-bag"></i>Tickets
+            </header>
+            <div class="model-body">
+                <label for="ticket-quantity" class="model-label">
+                    <i class="fas fa-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input id="ticket-quantity" type="text" class="model-input" placeholder="How many?">
+                <label for="ticket-email" class="model-label">
+                    <i class="far fa-user"></i>
+                    Send to
+                </label>
+                <input id="ticket-email" type="text" class="model-input" placeholder="Enter email?">
+                <button class="buy-tickets">
+                    PAY
+                    <i class="fas fa-check"></i>
+                </button>
+            </div>
+
+            <footer class="model-footer">
+                <p class="model-help">
+                    Need 
+                    <a href="">help?</a>
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <script >
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        const model = document.querySelector('.model');
+        const modelClose = document.querySelector('.model-close')
+        const modelContainer = document.querySelector('.model-container')
+        function showBuyTickets(){
+            model.classList.add('open')
+        }
+
+        function hideBuyTickets(){
+            model.classList.remove('open')
+        }
+
+        for(const buyBtn of buyBtns){
+            buyBtn.addEventListener('click',showBuyTickets)
+        }
+
+
+        modelClose.addEventListener('click', hideBuyTickets)
+        model.addEventListener('click', hideBuyTickets)
+        modelContainer.addEventListener('click', function(event){
+            event.stopPropagation()
+        })
+    </script>
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.querySelector('.mobile-menu-btn')
+        var headerHigh = header.clientHeight;
+
+        // 
+        mobileMenu.onclick = function(){
+            var isClosed = header.clientHeight === headerHigh;
+            if(isClosed){
+                header.style.height = 'auto'
+            } else{
+                header.style.height = null
+            }
+        }
+        //tu dong dong' menu
+
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+        for(var i = 0; i < menuItems.length;  i++){
+            var menuItem = menuItems[i];
+
+            menuItem.onclick = function(event){
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                console.log(this)
+                console.log(isParentMenu)
+                if(!isParentMenu){
+                    header.style.height = null
+                }else{
+                    event.preventDefault();
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
